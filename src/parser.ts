@@ -139,6 +139,18 @@ const attribute = nodeMap(
   withAny(dquote)
 );
 
+const delCall = nodeMap(
+  S.DelCall,
+  P.string('{delcall')
+    .skip(P.whitespace)
+    .then(templateName),
+  spaced(attribute).many(),
+  P.alt(
+    spaced(closingBrace).result([]),
+    rbrace.then(spaced(param).many())
+      .skip(spaced(closeCmd('delcall'))))
+);
+
 const paramDeclaration = nodeMap(
   S.ParamDeclaration,
   P.string('{@param')
@@ -326,13 +338,14 @@ function bodyFor(name: string, ...inter: Array<String>): P.Parser<S.Body> {
   const bodyParser: P.Parser<S.Body> = P.lazy(() =>
     html.then(P.alt(
       closeCmd(name).result([]),
-      P.alt(...inter.map(openCmd))
+      P.alt(...inter.map((name) => openCmd(<string>name)))
         .result([])
         .then(bodyParser),
       P.seqMap(
         P.alt(
           literal,
           call,
+          delCall,
           letStatement,
           otherCmd('if', 'elseif', 'else'),
           otherCmd('foreach', 'ifempty'),

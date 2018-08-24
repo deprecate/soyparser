@@ -267,6 +267,389 @@ Object {
 }
 `;
 
+exports[`Soy Parser should parse delcall 1`] = `
+Object {
+  "body": Array [
+    Object {
+      "attributes": Array [],
+      "body": Array [
+        Object {
+          "attributes": Array [],
+          "body": Array [],
+          "id": Object {
+            "name": "First",
+            "namespace": "Test",
+          },
+          "mark": Object {
+            "end": Object {
+              "column": 3,
+              "line": 13,
+              "offset": 134,
+            },
+            "start": Object {
+              "column": 3,
+              "line": 11,
+              "offset": 108,
+            },
+          },
+          "type": "DelCall",
+        },
+        Object {
+          "attributes": Array [
+            Object {
+              "mark": Object {
+                "end": Object {
+                  "column": 36,
+                  "line": 13,
+                  "offset": 167,
+                },
+                "start": Object {
+                  "column": 23,
+                  "line": 13,
+                  "offset": 154,
+                },
+              },
+              "name": "variant",
+              "type": "Attribute",
+              "value": "foo",
+            },
+          ],
+          "body": Array [
+            Object {
+              "body": Object {
+                "mark": Object {
+                  "end": Object {
+                    "column": 22,
+                    "line": 14,
+                    "offset": 190,
+                  },
+                  "start": Object {
+                    "column": 17,
+                    "line": 14,
+                    "offset": 185,
+                  },
+                },
+                "name": "name",
+                "type": "Reference",
+              },
+              "mark": Object {
+                "end": Object {
+                  "column": 25,
+                  "line": 14,
+                  "offset": 193,
+                },
+                "start": Object {
+                  "column": 4,
+                  "line": 14,
+                  "offset": 172,
+                },
+              },
+              "name": "name",
+              "type": "Param",
+            },
+            Object {
+              "body": Object {
+                "mark": Object {
+                  "end": Object {
+                    "column": 24,
+                    "line": 15,
+                    "offset": 217,
+                  },
+                  "start": Object {
+                    "column": 18,
+                    "line": 15,
+                    "offset": 211,
+                  },
+                },
+                "name": "title",
+                "type": "Reference",
+              },
+              "mark": Object {
+                "end": Object {
+                  "column": 27,
+                  "line": 15,
+                  "offset": 220,
+                },
+                "start": Object {
+                  "column": 4,
+                  "line": 15,
+                  "offset": 197,
+                },
+              },
+              "name": "title",
+              "type": "Param",
+            },
+          ],
+          "id": Object {
+            "name": "First",
+            "namespace": "Test",
+          },
+          "mark": Object {
+            "end": Object {
+              "column": 3,
+              "line": 18,
+              "offset": 237,
+            },
+            "start": Object {
+              "column": 3,
+              "line": 13,
+              "offset": 134,
+            },
+          },
+          "type": "DelCall",
+        },
+        Object {
+          "attributes": Array [
+            Object {
+              "mark": Object {
+                "end": Object {
+                  "column": 36,
+                  "line": 18,
+                  "offset": 270,
+                },
+                "start": Object {
+                  "column": 23,
+                  "line": 18,
+                  "offset": 257,
+                },
+              },
+              "name": "variant",
+              "type": "Attribute",
+              "value": "foo",
+            },
+            Object {
+              "mark": Object {
+                "end": Object {
+                  "column": 47,
+                  "line": 18,
+                  "offset": 281,
+                },
+                "start": Object {
+                  "column": 37,
+                  "line": 18,
+                  "offset": 271,
+                },
+              },
+              "name": "data",
+              "type": "Attribute",
+              "value": "all",
+            },
+          ],
+          "body": Array [],
+          "id": Object {
+            "name": "First",
+            "namespace": "Test",
+          },
+          "mark": Object {
+            "end": Object {
+              "column": 3,
+              "line": 20,
+              "offset": 288,
+            },
+            "start": Object {
+              "column": 3,
+              "line": 18,
+              "offset": 237,
+            },
+          },
+          "type": "DelCall",
+        },
+        Object {
+          "attributes": Array [
+            Object {
+              "mark": Object {
+                "end": Object {
+                  "column": 47,
+                  "line": 20,
+                  "offset": 332,
+                },
+                "start": Object {
+                  "column": 23,
+                  "line": 20,
+                  "offset": 308,
+                },
+              },
+              "name": "allowemptydefault",
+              "type": "Attribute",
+              "value": "true",
+            },
+          ],
+          "body": Array [
+            Object {
+              "body": Object {
+                "mark": Object {
+                  "end": Object {
+                    "column": 22,
+                    "line": 21,
+                    "offset": 355,
+                  },
+                  "start": Object {
+                    "column": 17,
+                    "line": 21,
+                    "offset": 350,
+                  },
+                },
+                "name": "name",
+                "type": "Reference",
+              },
+              "mark": Object {
+                "end": Object {
+                  "column": 25,
+                  "line": 21,
+                  "offset": 358,
+                },
+                "start": Object {
+                  "column": 4,
+                  "line": 21,
+                  "offset": 337,
+                },
+              },
+              "name": "name",
+              "type": "Param",
+            },
+            Object {
+              "body": Object {
+                "mark": Object {
+                  "end": Object {
+                    "column": 24,
+                    "line": 22,
+                    "offset": 382,
+                  },
+                  "start": Object {
+                    "column": 18,
+                    "line": 22,
+                    "offset": 376,
+                  },
+                },
+                "name": "title",
+                "type": "Reference",
+              },
+              "mark": Object {
+                "end": Object {
+                  "column": 27,
+                  "line": 22,
+                  "offset": 385,
+                },
+                "start": Object {
+                  "column": 4,
+                  "line": 22,
+                  "offset": 362,
+                },
+              },
+              "name": "title",
+              "type": "Param",
+            },
+          ],
+          "id": Object {
+            "name": "First",
+            "namespace": "Test",
+          },
+          "mark": Object {
+            "end": Object {
+              "column": 2,
+              "line": 24,
+              "offset": 400,
+            },
+            "start": Object {
+              "column": 3,
+              "line": 20,
+              "offset": 288,
+            },
+          },
+          "type": "DelCall",
+        },
+      ],
+      "doc": Object {
+        "about": "Test",
+        "mark": Object {
+          "end": Object {
+            "column": 1,
+            "line": 6,
+            "offset": 34,
+          },
+          "start": Object {
+            "column": 1,
+            "line": 3,
+            "offset": 18,
+          },
+        },
+        "params": Array [],
+        "type": "SoyDoc",
+      },
+      "id": Object {
+        "name": "Test",
+        "namespace": null,
+      },
+      "mark": Object {
+        "end": Object {
+          "column": 12,
+          "line": 25,
+          "offset": 418,
+        },
+        "start": Object {
+          "column": 1,
+          "line": 3,
+          "offset": 18,
+        },
+      },
+      "params": Array [
+        Object {
+          "mark": Object {
+            "end": Object {
+              "column": 23,
+              "line": 7,
+              "offset": 73,
+            },
+            "start": Object {
+              "column": 2,
+              "line": 7,
+              "offset": 52,
+            },
+          },
+          "name": "name",
+          "paramType": "string",
+          "required": true,
+          "type": "ParamDeclaration",
+        },
+        Object {
+          "mark": Object {
+            "end": Object {
+              "column": 24,
+              "line": 8,
+              "offset": 97,
+            },
+            "start": Object {
+              "column": 2,
+              "line": 8,
+              "offset": 75,
+            },
+          },
+          "name": "title",
+          "paramType": "string",
+          "required": true,
+          "type": "ParamDeclaration",
+        },
+      ],
+      "type": "Template",
+    },
+  ],
+  "mark": Object {
+    "end": Object {
+      "column": 12,
+      "line": 25,
+      "offset": 418,
+    },
+    "start": Object {
+      "column": 1,
+      "line": 1,
+      "offset": 0,
+    },
+  },
+  "namespace": "Test",
+  "type": "Program",
+}
+`;
+
 exports[`Soy Parser should parse deltemplates 1`] = `
 Object {
   "body": Array [
@@ -335,7 +718,8 @@ Object {
               "offset": 198,
             },
           },
-          "type": "If",
+          "name": "if",
+          "type": "Other",
         },
         Object {
           "body": Array [],
@@ -568,7 +952,8 @@ Object {
               "offset": 579,
             },
           },
-          "type": "If",
+          "name": "if",
+          "type": "Other",
         },
         Object {
           "body": Array [],
@@ -822,7 +1207,8 @@ Object {
               "offset": 192,
             },
           },
-          "type": "If",
+          "name": "if",
+          "type": "Other",
         },
         Object {
           "body": Array [],
@@ -2054,7 +2440,8 @@ Object {
               "offset": 192,
             },
           },
-          "type": "If",
+          "name": "if",
+          "type": "Other",
         },
         Object {
           "body": Array [
@@ -2103,7 +2490,8 @@ Object {
               "offset": 265,
             },
           },
-          "type": "If",
+          "name": "if",
+          "type": "Other",
         },
         Object {
           "body": Array [
@@ -2425,7 +2813,8 @@ Object {
               "offset": 222,
             },
           },
-          "type": "Foreach",
+          "name": "foreach",
+          "type": "Other",
         },
         Object {
           "content": "$name",
@@ -2474,7 +2863,8 @@ Object {
               "offset": 316,
             },
           },
-          "type": "If",
+          "name": "if",
+          "type": "Other",
         },
       ],
       "doc": Object {
